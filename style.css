@@ -1,5 +1,185 @@
 body {
     padding: 0px;
     margin: 0px;
-    
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
+
+/* #region font family*/
+.poppins-medium {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* #endregion */
+
+
+
+
+/* #region header  */
+.header-content {
+    display: grid;
+    grid-template-columns: 10% 1fr 0.4fr;
+    margin: 2rem 0rem;
+    justify-content: space-between;
+}
+
+.left-header {
+    display: flex;
+    width: 30rem;
+}
+
+#header-logo {
+    max-width: 100%;
+}
+
+/* #region div-links */
+.div-links>a {
+    text-decoration: none;
+}
+
+.div-links>a:visited {
+    text-decoration: none;
+}
+
+.div-links>a:hover {
+    text-decoration: none;
+}
+
+.div-links>a:active {
+    text-decoration: none;
+}
+
+.div-links {
+    margin: 0rem 0rem 0 2rem;
+    align-self: center;
+}
+
+.div-links>a {
+    padding-left: 1rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 75%);
+}
+
+.div-links>a:hover {
+    padding-left: 1rem;
+    text-decoration: none;
+    color: hsl(260, 8%, 14%);
+    font-weight: 700;
+}
+
+/* #endregion div-links*/
+
+/* #region buttons-login-logout */
+.buttons-login-logout {
+    align-self: center;
+    margin-left: 3rem;
+}
+
+.buttons-login-logout>button {
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttons-login-logout>#singUp {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    margin-left: 0.7rem;
+}
+
+.buttons-login-logout>#singUp:hover {
+    background-color: hsl(180, 66%, 75%);
+}
+
+.buttons-login-logout>#singIn {
+    color: hsl(0, 0%, 75%);
+}
+
+.buttons-login-logout>#singIn:hover {
+    color: hsl(260, 8%, 14%);
+    font-weight: bolder;
+}
+
+.ilustrat-working {
+    max-width: 100%;
+    position: absolute;
+}
+
+
+.div {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid black
+}
+
+/* #endregion buttons-login-logout*/
+
+
+/* #endregion header*/
+
+
+
+/* #region main */
+.main-content {
+    display: grid;
+    grid-template-columns: 10% 1fr 50%;
+    ;
+    margin: 2rem 0rem;
+    justify-content: space-between;
+}
+
+.div-main-content {
+    width: 30rem;
+}
+
+.text-main {
+    font-size: 5rem;
+    margin: 0px;
+    line-height: 6rem;
+    color: hsl(260, 8%, 14%);
+    padding-top: 2rem;
+}
+
+.collum-2 {
+    width: 45rem;
+    height: 482px;
+}
+
+.main-content>div>p {
+    line-height: 2rem;
+    color: hsl(257, 7%, 63%);
+    font-size: 1.3rem;
+    margin: 0px;
+    width: 35rem;
+}
+
+.get-started {
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+}
+
+.get-started {
+    margin-top: 2rem;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+}
+/* #endregion main */
