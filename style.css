@@ -6,6 +6,30 @@ body {
     overflow-x: hidden;
 }
 
+h1,
+h2 {
+    color: hsl(260, 8%, 14%);
+}
+
+.detail {
+    border: 0.3rem solid hsl(180, 66%, 49%);
+    border-radius: 5px;
+    height: 0;
+    width: 50%;
+    position: absolute;
+    top: 76.4rem;
+    right: 18rem;
+}
+
+::placeholder {
+    color: hsl(257, 7%, 63%);
+}
+
+.backround-gray {
+    background-color: hsl(220, 36%, 95%);
+    margin: 9rem 0 0 0;
+}
+
 /* #region font family*/
 .poppins-medium {
     font-size: 18px;
@@ -21,9 +45,6 @@ body {
 }
 
 /* #endregion */
-
-
-
 
 /* #region header  */
 .header-content {
@@ -130,9 +151,7 @@ body {
 
 /* #endregion header*/
 
-
-
-/* #region main */
+/* #region main-content */
 .main-content {
     display: grid;
     grid-template-columns: 10% 1fr 50%;
@@ -182,4 +201,149 @@ body {
     padding: 0.7rem 2rem;
     font-size: 1rem;
 }
+
+.get-started:hover {
+    background-color: hsl(180, 66%, 75%);
+}
+
 /* #endregion main */
+
+/* #region shorten-url */
+
+.shorten-url {
+    display: grid;
+    grid-template-columns: 10% 2.6fr 0.4fr;
+    margin: 2rem 0rem;
+    justify-content: space-between;
+}
+
+.div-shorten-content {
+    width: 100%;
+    height: 9.3 rem;
+    border-radius: 0.5rem;
+    background-image: url('/images/bg-shorten-desktop.svg');
+    background-color: hsl(257, 27%, 26%);
+    margin-top: -4rem;
+
+}
+
+.div-shorten-content>div {
+    margin: 3rem 3rem;
+}
+
+.div-shorten-content>div>input {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 48rem;
+    color: hsl(257, 7%, 63%);
+}
+
+.div-shorten-content>div>button {
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    margin-left: 1rem;
+}
+
+/* #endregion */
+
+/* #region adv-statistics */
+.adv-statistics {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.adv-statistics>h2 {
+    font-size: 2rem;
+}
+
+.adv-statistics>p {
+    width: 42rem;
+    margin: 0 auto;
+    color: hsl(257, 7%, 63%);
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+/* #endregion */
+
+/* #region cards */
+.cards-collums {
+    display: grid;
+    grid-template-columns: 10% 2.6fr 0.4fr;
+    margin-top: 2rem;
+}
+
+.cards {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.format-cards {
+    width: 17.5rem;
+    margin-right: 2.5rem;
+    background-color: white;
+    padding: 4rem 1rem 1.5rem 3rem;
+    border-radius: 0.3rem;
+    z-index: 1;
+}
+
+.format-cards>h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.format-cards>p {
+    color: hsl(257, 7%, 63%);
+    font-size: 0.9rem;
+}
+
+.div-img {
+    height: 1rem;
+    width: 1rem;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: -6.5rem;
+}
+
+.recognition {
+    margin-bottom: 10.5rem;
+}
+
+.records {
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+}
+
+.customizable {
+    margin-top: 6rem;
+    margin-bottom: 5.5rem;
+}
+
+#first-detail{
+    width: 13%;
+    left: 26rem;
+    top: 35rem;
+}
+
+#second-detail{
+    width: 13%;
+    left: 650px;
+    top: 35rem;
+}
+
+/* #endregion */
+
+@media screen and (max-width: 800px) {
+    
+}
