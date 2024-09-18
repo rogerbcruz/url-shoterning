@@ -30,6 +30,11 @@ h2 {
     margin: 9rem 0 0 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* #region font family*/
 .poppins-medium {
     font-size: 18px;
@@ -250,6 +255,10 @@ h2 {
     margin-left: 1rem;
 }
 
+.div-shorten-content>div>button:hover {
+    background-color: hsl(180, 66%, 75%);
+}
+
 /* #endregion */
 
 /* #region adv-statistics */
@@ -330,20 +339,87 @@ h2 {
     margin-bottom: 5.5rem;
 }
 
-#first-detail{
+#first-detail {
     width: 13%;
     left: 26rem;
-    top: 35rem;
+    top: 86.8rem;
 }
 
-#second-detail{
+#second-detail {
     width: 13%;
-    left: 650px;
-    top: 35rem;
+    left: 49rem;
+    top: 86.8rem;
 }
 
 /* #endregion */
 
-@media screen and (max-width: 800px) {
-    
+/* #region boost your link */
+
+.div-started-grid {
+    display: grid;
+    grid-template-columns: 10% 2.6fr 0.4fr;
+    height: 15.7rem;
+    background-image: url('images/bg-boost-desktop.svg');
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+}
+
+.div-started-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-started-content>h2 {
+    color: white;
+}
+
+.btn-started {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+}
+
+.btn-started:hover {
+    background-color: hsl(180, 66%, 75%);
+}
+
+/* #endregion */
+
+footer {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 10%;
+    background-color: hsl(260, 37%, 8%);
+    padding: 4rem 0rem;
+}
+
+#whiteLogo {
+    filter: invert(100%);
+}
+
+.details-dt>a {
+ color: hsl(257, 7%, 63%); 
+ font-size: 1rem;
+}
+.details-dt>a:hover {
+ color: hsl(180, 66%, 49%);
+}
+
+.details-dt>h2 {
+    color: white;
+    font-size: 1rem;
+    margin: 0rem;
+}
+
+.icons>a {
+    margin-right: 1rem;
+}
+.icons>a:hover path {
+    fill: hsl(180, 66%, 49%);
 }
